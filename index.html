@@ -3,41 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Quiz</title>
+    <title>Home-DSA Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
+    <div class="home-container">
         <header>
-            <h1>DSA Quiz</h1>
-            <div class="timer">Time Left: <span id="time">4:58</span></div>
+            <h1 style="color: #ff6600">Welcome to the DSA Quiz</h1>
         </header>
-        <div class="progress-bar">
-            <div class="progress" id="progress"></div>
-        </div>
         <main>
-            <div class="question-container">
-                <h2>Question</h2>
-                <div class="question">
-                    <p id="question-text">Loading question...</p>
-                    <ul id="options-list"></ul>
-                </div>
-                <div class="controls">
-                    <button id="skip">Skip</button>
-                    <button id="save-next">Save & Next</button>
-                </div>
-            </div>
-            <div class="question-status">
-                <h3>Questions Status</h3>
-                <div class="status-grid">
-                </div>
-                <div class="legend">
-                    <span class="attempted"><span class="circle"></span> Attempted</span>
-                    <span class="not-attempted"><span class="circle"></span> Not Attempted</span>
-                </div>                
-            </div>
+            <p>This quiz will test your knowledge in Data Strutures.</p>
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Once started, the quiz cannot be paused.</li>
+                <li>You can toggle between questions using the navigation buttons.</li>
+                <li>Use "Skip" to move to the next question without answering.</li>
+                <li>Use "Save & Next" to answer the current question and move to the next.</li>
+            </ul>
+            <button id="start-quiz">Start Quiz</button>
         </main>
-    </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('start-quiz').addEventListener('click', () => {
+            window.location.href = 'quiz.html';
+        });
+    </script>
 </body>
 </html>
