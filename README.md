@@ -8,8 +8,8 @@
 - Responsive design for various screen sizes.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/quiz-app.git`
-2. Navigate into the project directory: `cd quiz-app`
+1. Clone the repository: `https://github.com/SnehaRS10/QuizApp.git`
+2. Navigate into the project directory: `cd QuizApp`
 3. Open `index.html` in your web browser.
 
 ## Usage
